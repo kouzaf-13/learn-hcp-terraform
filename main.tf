@@ -40,6 +40,6 @@ resource "aws_instance" "app_server" {
   subnet_id              = module.vpc.private_subnets[0]
 
   tags = {
-    Name = var.instance_name, abc
+    Name = var.instance_name
   }
 }
