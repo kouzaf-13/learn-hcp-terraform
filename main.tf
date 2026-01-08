@@ -43,3 +43,7 @@ resource "aws_instance" "app_server" {
     Name = var.instance_name
   }
 }
+
+output "instance_public_ip" {
+  value       = aws_instance.app_server.public_ip
+}
